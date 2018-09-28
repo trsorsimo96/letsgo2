@@ -38,6 +38,26 @@ public class CacheConfiguration {
             cm.createCache(cm.app.letsgo.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(cm.app.letsgo.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(cm.app.letsgo.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Partner.class.getName(), jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Partner.class.getName() + ".resellers", jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Distributor.class.getName(), jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Distributor.class.getName() + ".distributors", jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Town.class.getName(), jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Company.class.getName(), jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Company.class.getName() + ".resellers", jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Company.class.getName() + ".companies", jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Route.class.getName(), jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Route.class.getName() + ".paths", jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Resa.class.getName(), jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Travel.class.getName(), jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Travel.class.getName() + ".travels", jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.ConfigFare.class.getName(), jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.ConfigFare.class.getName() + ".companies", jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.ConfigCommission.class.getName(), jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Planning.class.getName(), jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Planning.class.getName() + ".travels", jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Cabin.class.getName(), jcacheConfiguration);
+            cm.createCache(cm.app.letsgo.domain.Cabin.class.getName() + ".cabins", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
